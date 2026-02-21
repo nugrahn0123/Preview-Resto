@@ -578,6 +578,70 @@ footer {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact-item {
+    background: rgba(0, 240, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #00f0ff;
+  }
+
+  .contact-item h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .contact-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .contact-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-form h3 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 14px;
+    background: #1a1a20;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #00f0ff;
+    box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -647,6 +711,7 @@ footer {
   .menu-card {
     margin: 0;
     max-width: none;
+    padding: 15px;
   }
 
   .testimonials-grid {
@@ -678,7 +743,41 @@ footer {
   }
 
   .contact-item {
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+
+  .contact-item h3 {
+    font-size: 15px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-actions a {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .contact-form h3 {
     margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+    font-size: 15px;
   }
 
   h2 {
@@ -733,8 +832,8 @@ footer {
   }
 
   .menu-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .gallery-grid {
