@@ -10,13 +10,20 @@
 
 <header class="navbar">
   <div class="logo">AURORA</div>
-  <nav>
+  <nav class="nav-menu">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#menu">Menu</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#features">Features</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <section class="hero" id="home">
@@ -33,12 +40,13 @@
 </section>
 
 <section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-text">
+  <div class="container">
+    <div class="about-header">
       <h2>About AURORA</h2>
-      <p>
-        AURORA menghadirkan pengalaman bersantap premium dengan desain futuristik
-        dan sentuhan cita rasa internasional.
+      <p class="about-intro">
+        Selamat datang di AURORA Dining Experience, destinasi kuliner futuristik yang memadukan
+        inovasi teknologi dengan seni gastronomi berkelas dunia. Terletak di pusat kota Makassar,
+        restoran kami menjadi landmark kuliner yang menginspirasi.
       </p>
       <div class="stats">
         <div>
@@ -53,10 +61,45 @@
           <h3>4</h3>
           <span>Professional Chefs</span>
         </div>
+        <div>
+          <h3>50+</h3>
+          <span>Unique Dishes</span>
+        </div>
       </div>
     </div>
-    <div class="about-img">
-      <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <h3>🎨 Desain Futuristik</h3>
+            <p>Interior dengan pencahayaan LED dinamis, musik ambient, dan arsitektur modern
+            yang menciptakan atmosfer dining yang tak terlupakan.</p>
+          </div>
+
+          <div class="highlight-item">
+            <h3>👨‍🍳 Chef Berkelas Dunia</h3>
+            <p>Tim chef profesional kami menggabungkan teknik memasak tradisional dengan inovasi
+            modern, menghasilkan kreasi kuliner yang unik dan menggugah selera.</p>
+          </div>
+
+          <div class="highlight-item">
+            <h3>🌱 Bahan Premium</h3>
+            <p>Hanya bahan-bahan segar pilihan dari supplier terpercaya, dipilih dengan standar
+            kualitas tertinggi untuk memastikan cita rasa maksimal.</p>
+          </div>
+        </div>
+
+        <p class="about-conclusion">
+          AURORA bukan sekadar restoran, melainkan sebuah pengalaman. Tempat yang sempurna untuk
+          merayakan momen spesial, menikmati waktu berkualitas bersama orang tercinta, atau
+          sekadar menikmati hidangan luar biasa dalam suasana yang elegan dan modern.
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+      </div>
     </div>
   </div>
 </section>
@@ -93,6 +136,100 @@
         </div>
       </div>
 
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d">
+        <div class="menu-info">
+          <h3>Quantum Sushi</h3>
+          <p>Fresh sushi rolls with innovative fusion flavors.</p>
+          <span>Rp 180.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828">
+        <div class="menu-info">
+          <h3>Aurora Salad</h3>
+          <p>Organic greens with house-made dressing and nuts.</p>
+          <span>Rp 75.000</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307">
+        <div class="menu-info">
+          <h3>Digital Dessert</h3>
+          <p>Decadent chocolate cake with edible gold leaf.</p>
+          <span>Rp 85.000</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Pengalaman dining yang luar biasa! Atmosfer futuristik dan makanan yang lezat membuat malam kami tak terlupakan."</p>
+        </div>
+        <div class="testimonial-author">
+          <h4>Sarah Wijaya</h4>
+          <span>Food Blogger</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Chef-nya sangat kreatif. Setiap hidangan memiliki twist modern yang menarik. Pelayanan juga sangat baik."</p>
+        </div>
+        <div class="testimonial-author">
+          <h4>Ahmad Rahman</h4>
+          <span>Business Executive</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Tempat yang sempurna untuk merayakan ulang tahun. Staff ramah dan suasana yang instagramable!"</p>
+        </div>
+        <div class="testimonial-author">
+          <h4>Maya Sari</h4>
+          <span>Marketing Manager</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <h2>Why Choose AURORA</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Premium Ingredients</h3>
+        <p>Kami hanya menggunakan bahan-bahan segar dan berkualitas tinggi dari supplier terpercaya.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Innovative Cuisine</h3>
+        <p>Chef kami menggabungkan teknik tradisional dengan inovasi modern untuk cita rasa unik.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Exceptional Service</h3>
+        <p>Tim profesional kami siap memberikan pelayanan terbaik dengan perhatian penuh.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Modern Ambiance</h3>
+        <p>Desain interior futuristik dengan pencahayaan LED dan musik ambient yang menenangkan.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Private Dining</h3>
+        <p>Ruangan pribadi tersedia untuk acara spesial, pertemuan bisnis, atau perayaan keluarga.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Online Reservation</h3>
+        <p>Pesan meja Anda secara online untuk menghindari antrian dan memastikan tempat tersedia.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -105,19 +242,74 @@
       <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
       <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
       <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
     </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="container contact-box">
-    <div>
-      <h2>Visit Us</h2>
-      <p>Jl. Premium No.88, Makassar</p>
-      <p>Open Daily 10.00 – 23.00</p>
-    </div>
-    <div>
-      <a href="#" class="btn-primary">Get Directions</a>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Visit Us</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Jl. Premium No.88, Makassar<br>Sulawesi Selatan, Indonesia</p>
+          </div>
+          <div class="contact-item">
+            <h3>Hours</h3>
+            <p>Monday - Thursday: 10.00 – 23.00<br>Friday - Saturday: 10.00 – 24.00<br>Sunday: 11.00 – 22.00</p>
+          </div>
+          <div class="contact-item">
+            <h3>Contact</h3>
+            <p>Phone: +62 411 123 4567<br>Email: info@auroradining.com</p>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="#" class="btn-primary">Get Directions</a>
+          <a href="#" class="btn-outline">Call Now</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Make a Reservation</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Select Time</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Number of Guests</option>
+              <option value="2">2 People</option>
+              <option value="4">4 People</option>
+              <option value="6">6 People</option>
+              <option value="8">8+ People</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Book Table</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -125,6 +317,33 @@
 <footer>
   <p>© 2026 AURORA Dining Experience</p>
 </footer>
+
+<script>
+  // Hamburger Menu Toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+</script>
 
 </body>
 </html>
