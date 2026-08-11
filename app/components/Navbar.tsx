@@ -16,7 +16,7 @@ export default function Navbar() {
   const { count, setIsOpen } = useCart()
 
   return (
-    <nav style={{ backgroundColor: '#4A2535' }} className="sticky top-0 z-50 shadow-lg">
+    <nav style={{ backgroundColor: '#4A2535' }} className="sticky top-0 z-30 shadow-lg">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold tracking-widest" style={{ color: '#F5D5B0', fontFamily: 'Georgia, serif' }}>
           RESTO

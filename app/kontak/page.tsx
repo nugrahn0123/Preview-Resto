@@ -96,18 +96,18 @@ export default function KontakPage() {
                 Kirim Pesan
               </h2>
               <div className="space-y-1">
-                <label className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Nama</label>
-                <input required name="nama" value={form.nama} onChange={handleChange}
+                <label htmlFor="nama" className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Nama</label>
+                <input id="nama" required name="nama" value={form.nama} onChange={handleChange}
                   placeholder="Nama Anda" className={inputClass} style={inputStyle} />
               </div>
               <div className="space-y-1">
-                <label className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Email</label>
-                <input required type="email" name="email" value={form.email} onChange={handleChange}
+                <label htmlFor="email" className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Email</label>
+                <input id="email" required type="email" name="email" value={form.email} onChange={handleChange}
                   placeholder="email@contoh.com" className={inputClass} style={inputStyle} />
               </div>
               <div className="space-y-1">
-                <label className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Pesan</label>
-                <textarea required name="pesan" value={form.pesan} onChange={handleChange}
+                <label htmlFor="pesan" className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#D4396B' }}>Pesan</label>
+                <textarea id="pesan" required name="pesan" value={form.pesan} onChange={handleChange}
                   placeholder="Tulis pesan Anda di sini..."
                   rows={5} className={`${inputClass} resize-none`} style={inputStyle}
                 />

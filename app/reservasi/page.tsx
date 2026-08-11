@@ -81,26 +81,26 @@ export default function ReservasiPage() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label style={labelStyle}>Nama Lengkap *</label>
-                <input required name="nama" value={form.nama} onChange={handleChange}
+                <label htmlFor="nama" style={labelStyle}>Nama Lengkap *</label>
+                <input id="nama" required name="nama" value={form.nama} onChange={handleChange}
                   placeholder="John Doe" className={inputClass} style={inputStyle} />
               </div>
               <div className="space-y-1">
-                <label style={labelStyle}>Email *</label>
-                <input required type="email" name="email" value={form.email} onChange={handleChange}
+                <label htmlFor="email" style={labelStyle}>Email *</label>
+                <input id="email" required type="email" name="email" value={form.email} onChange={handleChange}
                   placeholder="email@contoh.com" className={inputClass} style={inputStyle} />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label style={labelStyle}>Nomor Telepon *</label>
-                <input required name="telepon" value={form.telepon} onChange={handleChange}
+                <label htmlFor="telepon" style={labelStyle}>Nomor Telepon *</label>
+                <input id="telepon" required name="telepon" value={form.telepon} onChange={handleChange}
                   placeholder="08xxxxxxxxxx" className={inputClass} style={inputStyle} />
               </div>
               <div className="space-y-1">
-                <label style={labelStyle}>Jumlah Tamu *</label>
-                <select required name="tamu" value={form.tamu} onChange={handleChange}
+                <label htmlFor="tamu" style={labelStyle}>Jumlah Tamu *</label>
+                <select id="tamu" required name="tamu" value={form.tamu} onChange={handleChange}
                   className={inputClass} style={inputStyle}>
                   {['1','2','3','4','5','6','7','8','9','10'].map((n) => (
                     <option key={n} value={n}>{n} orang</option>
@@ -111,14 +111,14 @@ export default function ReservasiPage() {
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label style={labelStyle}>Tanggal *</label>
-                <input required type="date" name="tanggal" value={form.tanggal} onChange={handleChange}
+                <label htmlFor="tanggal" style={labelStyle}>Tanggal *</label>
+                <input id="tanggal" required type="date" name="tanggal" value={form.tanggal} onChange={handleChange}
                   min={new Date().toISOString().split('T')[0]}
                   className={inputClass} style={inputStyle} />
               </div>
               <div className="space-y-1">
-                <label style={labelStyle}>Waktu *</label>
-                <select required name="waktu" value={form.waktu} onChange={handleChange}
+                <label htmlFor="waktu" style={labelStyle}>Waktu *</label>
+                <select id="waktu" required name="waktu" value={form.waktu} onChange={handleChange}
                   className={inputClass} style={inputStyle}>
                   {['11:00','12:00','13:00','14:00','17:00','18:00','19:00','20:00','21:00'].map((t) => (
                     <option key={t} value={t}>{t} WIB</option>
@@ -128,8 +128,8 @@ export default function ReservasiPage() {
             </div>
 
             <div className="space-y-1">
-              <label style={labelStyle}>Catatan Khusus</label>
-              <textarea name="catatan" value={form.catatan} onChange={handleChange}
+              <label htmlFor="catatan" style={labelStyle}>Catatan Khusus</label>
+              <textarea id="catatan" name="catatan" value={form.catatan} onChange={handleChange}
                 placeholder="Alergi makanan, permintaan khusus, dll..."
                 rows={3}
                 className={`${inputClass} resize-none`} style={inputStyle}
