@@ -1,19 +1,24 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import { CartProvider } from "./context/CartContext"
+import Navbar from "./components/Navbar"
+import CartSidebar from "./components/CartSidebar"
 
 export const metadata: Metadata = {
-  title: "Resto",
-  description: "Restaurant Management System",
+  title: "Resto — Fine Dining",
+  description: "Nikmati pengalaman kuliner terbaik",
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body>{children}</body>
+      <body>
+        <CartProvider>
+          <Navbar />
+          {children}
+          <CartSidebar />
+        </CartProvider>
+      </body>
     </html>
   )
 }
