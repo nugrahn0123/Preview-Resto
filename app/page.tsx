@@ -4,7 +4,8 @@ import Link from 'next/link'
 import MenuCard from './components/MenuCard'
 import { menuData } from './data/menu'
 
-const featured = menuData.filter((_, i) => [0, 1, 2, 4, 11, 13].includes(i))
+const featuredIds = [1, 2, 3, 5, 12, 14]
+const featured = menuData.filter((item) => featuredIds.includes(item.id))
 
 export default function Home() {
   return (
