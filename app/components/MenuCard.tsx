@@ -20,7 +20,7 @@ export default function MenuCard({ id, name, price, desc, emoji, category }: Pro
 
   return (
     <div
-      className="rounded-xl md:rounded-2xl p-4 md:p-6 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col"
+      className="rounded-xl md:rounded-2xl p-4 md:p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
       style={{ backgroundColor: '#fff', border: '1px solid #F08090' }}
     >
       <div
