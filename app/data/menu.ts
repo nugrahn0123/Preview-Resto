@@ -16,6 +16,8 @@ export const menuData = [
   { id: 15, name: 'Mocktail Berry',       category: 'Minuman',  price: 45000,  desc: 'Mix berry, mint & soda water yang menyegarkan',              emoji: '🍹' },
   { id: 16, name: 'Fresh Juice',          category: 'Minuman',  price: 35000,  desc: 'Jus buah segar pilihan (jeruk/semangka/alpukat)',            emoji: '🥤' },
   { id: 17, name: 'Cappuccino',           category: 'Minuman',  price: 40000,  desc: 'Espresso dengan steamed milk foam berkualitas',              emoji: '☕' },
+  { id: 18, name: 'Lamb Chop',            category: 'Utama',    price: 210000, desc: 'Iga domba panggang dengan rosemary jus & grilled vegetables', emoji: '🍖' },
+  { id: 19, name: 'Creme Brulee',         category: 'Dessert',  price: 60000,  desc: 'Custard vanilla dengan lapisan karamel renyah',              emoji: '🍯' },
 ]
 
 export const categories = ['Semua', 'Utama', 'Pembuka', 'Dessert', 'Minuman']
