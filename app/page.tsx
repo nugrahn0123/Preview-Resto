@@ -110,7 +110,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-6 md:py-8 px-4 md:px-6 text-center" style={{ backgroundColor: '#4A2535' }}>
         <p className="text-xs md:text-sm" style={{ color: '#F08090' }}>
-          © 2026 Resto. All rights reserved.
+          © {new Date().getFullYear()} Resto. All rights reserved.
         </p>
       </footer>
     </main>
