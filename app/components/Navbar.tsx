@@ -40,6 +40,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 md:gap-4">
           <button
             onClick={() => setIsOpen(true)}
+            aria-label="Buka keranjang belanja"
             className="relative px-3 md:px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:opacity-90 active:scale-95"
             style={{ backgroundColor: '#D4396B', color: '#fff' }}
           >
@@ -58,6 +59,8 @@ export default function Navbar() {
           {/* Hamburger menu */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
+            aria-expanded={mobileMenuOpen}
             className="md:hidden p-2 rounded-lg transition-all hover:opacity-80"
             style={{ color: '#F5D5B0' }}
           >
